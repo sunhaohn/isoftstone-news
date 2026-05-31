@@ -26,8 +26,9 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="/" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">首页</Link>
             <Link href="/news" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">新闻列表</Link>
-            <Link href="/timeline" className="text-slate-600 darxt-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">时间线</Link>
+            <Link href="/timeline" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">时间线</Link>
             <Link href="/categories" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">分类</Link>
+            <Link href="/admin" className="text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">管理</Link>
             <button
               onClick={toggleDark}
               className="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors"
@@ -57,6 +58,7 @@ export default function Header() {
               <Link href="/news" className="text-slate-600 dark:text-slate-300 hover:text-primary-600">新闻列表</Link>
               <Link href="/timeline" className="text-slate-600 dark:text-slate-300 hover:text-primary-600">时间线</Link>
               <Link href="/categories" className="text-slate-600 dark:text-slate-300 hover:text-primary-600">分类</Link>
+              <Link href="/admin" className="text-slate-600 dark:text-slate-300 hover:text-primary-600">管理</Link>
               <button onClick={toggleDark} className="text-left text-slate-600 dark:text-slate-300">
                 {darkMode ? '☀️ 浅色模式' : '🌙 暗色模式'}
               </button>
